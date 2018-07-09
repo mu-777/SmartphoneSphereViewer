@@ -16,7 +16,7 @@ $.when(sphereRendererDeffered).then(function (sphereRenderer) {
         const roll = event.alpha;
 
         console.log(pitch + ', ' + yaw + ', ' + roll);
-        sphereRenderer.updateRenderCameraPose(pitch, yaw)
+        sphereRenderer.updateRenderCameraPose(-pitch, -yaw)
     };
 
     window.addEventListener('deviceorientation', deviceOrientationHandler);
